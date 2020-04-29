@@ -55,4 +55,23 @@ findClass
 <Message>
 base.content
 </Message>
+</Exception><Exception>
+<DateTime>
+Wed Apr 29 22:05:17 CET 2020
+</DateTime>
+<ClassPackage>
+java.lang
+</ClassPackage>
+<ClassName>
+pack1.P
+</ClassName>
+<MethodeName>
+main
+</MethodeName>
+<LineNumber>
+35
+</LineNumber>
+<Message>
+/ by zero
+</Message>
 </Exception>

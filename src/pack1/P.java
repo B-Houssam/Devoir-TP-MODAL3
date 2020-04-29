@@ -32,7 +32,7 @@ public class P {
 		try {
 			//
 			//trigger exception
-			//int kk = 14/0;
+			int kk = 14/0;
 			//
 			
 			JFileChooser fi = new JFileChooser();
@@ -45,7 +45,7 @@ public class P {
 			String project = file.getName();
 			File packs = new File(path+"/src/");
 			
-
+			//on recupere tts les packages du projet
 			String[] directories = packs.list(new FilenameFilter() {
 			  @Override
 			  public boolean accept(File current, String name) {
@@ -106,9 +106,7 @@ public class P {
 					
 					
 					bw.write("<DateTime>");
-					bw.newLine();
 					bw.write(new Date().toString());
-					bw.newLine();
 					bw.write("</DateTime>");
 					bw.newLine();
 					bw.write("<ProjectName>");
