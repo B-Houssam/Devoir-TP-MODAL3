@@ -1,7 +1,8 @@
 # Devoir TP MODAL3
 
-# Enoncé:
--Ecrire un programme Java qui permet de créer un fichier XML (ou plusieurs fichiers XML) à partir d’un projet Java quelconque. Un projet Java contient plusieurs classes Java.
+# Enoncé
+
+Ecrire un programme Java qui permet de créer un fichier XML (ou plusieurs fichiers XML) à partir d’un projet Java quelconque. Un projet Java contient plusieurs classes Java.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 *Indication:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
