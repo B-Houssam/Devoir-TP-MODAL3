@@ -1,7 +1,7 @@
 <DateTime>
-Wed Apr 29 15:07:41 CET 2020
+Wed Apr 29 15:14:42 CET 2020
 </DateTime>
-<ProjectName
+<ProjectName>
 DummyData
 </ProjectName>
 <JavaVersion>
@@ -72,18 +72,6 @@ pack2.Emp
 </nbMethodes><NomTypeRetourMethodes>
 <Methode>
 <NomMethode>
-printName
-</NomMethode>
-<TypeRetourMethode>
-void
-</TypeRetourMethode>
-<nbParametres>
-0
-</nbParametres><ParametresMethodes>
-</ParametresMethodes>
-</Methode>
-<Methode>
-<NomMethode>
 empAge
 </NomMethode>
 <TypeRetourMethode>
@@ -125,6 +113,18 @@ void
 <TypeParametre1>
 double
 </TypeParametre1>
+</ParametresMethodes>
+</Methode>
+<Methode>
+<NomMethode>
+printName
+</NomMethode>
+<TypeRetourMethode>
+void
+</TypeRetourMethode>
+<nbParametres>
+0
+</nbParametres><ParametresMethodes>
 </ParametresMethodes>
 </Methode>
 </NomTypeRetourMethodes>

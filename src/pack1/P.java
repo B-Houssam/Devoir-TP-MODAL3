@@ -111,7 +111,7 @@ public class P {
 					bw.newLine();
 					bw.write("</DateTime>");
 					bw.newLine();
-					bw.write("<ProjectName");
+					bw.write("<ProjectName>");
 					bw.newLine();
 					bw.write(""+project);
 					bw.newLine();
