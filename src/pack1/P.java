@@ -1,5 +1,9 @@
 package pack1;
 
+/*
+ * author Bousri Houssam
+ */
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -211,58 +215,81 @@ public class P {
 					
 					bw.write("</NomsTypesAttributsPrivés>");
 					bw.newLine();
+					bw.write("<ListConstructeurs>");
+					bw.newLine();
 					
-					
-					
-					
-					bw.write("</Class>");
-					
-								
-					/*
-				
-				
-							
-					
-				
-					br.write("Liste des constructeurs: [ ");
 					Constructor[] constructor = c.getDeclaredConstructors();
 					for (Constructor oneCon : constructor) {
-						br.write(oneCon.getName() + " ");
+						bw.write("<Constructor>");
+						bw.newLine();
+						bw.write(oneCon.getName());
+						bw.newLine();
+						bw.write("</Constructor>");
+						bw.newLine();
 					}
-					br.write("]");
-					br.newLine();
+					
+					bw.write("</ListConstructeurs>");
+					bw.newLine();
+					
 					Method[] declaredMethodes = c.getDeclaredMethods();
-					br.write("Nombre de méthodes: " + declaredMethodes.length);
-					br.newLine();
-					br.write("Liste des méthodes: [ ");
+					
+					bw.write("<nbMethodes>");
+					bw.newLine();
+					bw.write(""+declaredMethodes.length);
+					bw.newLine();
+					bw.write("</nbMethodes>");
+					bw.write("<NomTypeRetourMethodes>");
+					bw.newLine();
+
 					for (Method meth : declaredMethodes) {
-						br.write(meth.getName() + ", ");
-					}
-					br.write("]");
-					br.newLine();
-					br.write("Type de retour des méthodes: [ ");
-					for (Method meth : declaredMethodes) {
-						br.write(meth.getName() + ": " + meth.getReturnType().getSimpleName() +", ");
-					}
-					br.write("]");
-					br.newLine();
-					br.write("Paramètres et types des méthodes: ");
-					for (Method meth : declaredMethodes) {
-						br.write(meth.getName()+"[");
 						Class[] parameterTypes = meth.getParameterTypes();
+						
+						bw.write("<Methode>");
+						bw.newLine();
+						bw.write("<NomMethode>");
+						bw.newLine();
+						bw.write(meth.getName());
+						bw.newLine();
+						bw.write("</NomMethode>");
+						bw.newLine();
+						bw.write("<TypeRetourMethode>");
+						bw.newLine();
+						bw.write(meth.getReturnType().getSimpleName());
+						bw.newLine();
+						bw.write("</TypeRetourMethode>");
+						bw.newLine();
+						bw.write("<nbParametres>");
+						bw.newLine();
+						bw.write("" + parameterTypes.length);
+						bw.newLine();
+						bw.write("</nbParametres>");
+						bw.write("<ParametresMethodes>");
+						bw.newLine();
+						
+						
 						for (int k = 0; k < parameterTypes.length; k++) {
-							br.write("param" + (k+1) + ": " + parameterTypes[k].getSimpleName() +", ");
+							bw.write("<TypeParametre"+(k+1)+">");
+							bw.newLine();
+							bw.write(parameterTypes[k].getSimpleName());
+							bw.newLine();
+							bw.write("</TypeParametre"+(k+1)+">");
+							bw.newLine();
 						}
-						br.write("], ");
+					
+						bw.write("</ParametresMethodes>");
+						bw.newLine();
+						bw.write("</Methode>");
+						bw.newLine();
 					}
-					br.newLine();
-					br.write("-------------------------------------------------------------------------------------------------------------------------------------");	
-					*/				
+					
+					bw.write("</NomTypeRetourMethodes>");
+					bw.newLine();		
+					bw.write("</Class>");
+
 					count++;
 					bw.close();
 				}
-			}
-			
+			}	
 			
 		} catch (Exception e) {
 			// TODO: handle exception
